@@ -1,4 +1,4 @@
-## Gleb Pissarik  
+## Gleb Pissarik 
 
 ### Contacts
 * 4ebula@gmail.com
@@ -17,6 +17,19 @@ Great learner; like to discover new approaches and ways, always strive to improv
 
 ---
 
+### Skills
+
+Have basic knowledge in HTML5, CSS3, JS and C++, experience with Bootstrap and jQuery, Git Version control.
+Background in supporting site with CMS (Joomla).
+English level is somewhere about B1.
+
+---
+
+### Education  
+
+Self-educated.
+
+---
 
 ### Code example
 

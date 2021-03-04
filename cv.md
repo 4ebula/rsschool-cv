@@ -5,7 +5,6 @@
 * +375 29 230 86 80
 * https://t.me/Chebula
 * [github](https://github.com/4ebula)
-* 4ebula@gmail.com
 
 ---
 

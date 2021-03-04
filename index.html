@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <title>CV</title>
 </head>
+
 <body>
   <div class="container">
-    <main><h1>Gleb Pissarik</h1></main>
+    <main>
+      <h1>Gleb Pissarik</h1>
+    </main>
     <div>
       <h3>Contacts</h3>
       <ul>
@@ -17,24 +21,24 @@
         <li>+375 29 230 86 80</li>
         <li><a href="https://t.me/Chebula" target="_blank">Telegram</a></li>
         <li><a href="https://github.com/4ebula" target="_blank">Github</a></li>
-        <li></li>
       </ul>
     </div>
     <div>
       <h3>About me</h3>
       <p>My goal is to change career and become a front end developer. Have a passion for codding.
         I'm very attracted to the opportunity to learn creating mobile apps and SPA.
-        Great learner; like to discover new approaches and ways, always strive to improve myself. Can easily find elegant and efficient solutions to non-standart tasks.
-        </p>
+        Great learner; like to discover new approaches and ways, always strive to improve myself. Can easily find
+        elegant and efficient solutions to non-standart tasks.
+      </p>
     </div>
     <div>
       <h3>Skills</h3>
+      <p>
+        Have basic knowledge in HTML5, CSS3, JS and C++, experience with Bootstrap and jQuery, Git Version control.
+        Background in supporting site with CMS (Joomla).
+        English level is somewhere about B1.
+      </p>
       <ul>
-        <p>
-          Have basic knowledge in HTML5, CSS3, JS and C++, experience with Bootstrap and jQuery, Git Version control.
-          Background in supporting site with CMS (Joomla).
-          English level is somewhere about B1.
-        </p>
         <li></li>
         <li></li>
         <li></li>
@@ -48,51 +52,55 @@
     </div>
     <div>
       <h3>Code example</h3>
-      
-<code>
-  function timerStarter(){
-    minutes = +currentTime[0];
-    seconds = +currentTime[1];
-   setTimeout(function tick(){
-      if(isStarted && minutes+seconds != 0 && !isReset) {
-        if(firstStart) {
-          seconds++;
-          firstStart = false;
-        }
-        circleProgress();
-        countdown();
-        setTimeout(tick, 1000);
-        if(minutes+seconds == 0){
-          isReset = true;
-          let counter = false;
-          let colorNow;
-          let bgRing = document.getElementsByClassName('backgroundCircle')[0];
-          let time = document.getElementById('clockLength');
-          setTimeout(function blink(){
-            sound.play();
-            colorNow = counter & 1 ? '#fe4e4d' : '#0dc97f';
-            time.style.color = colorNow;
-            bgRing.style.setProperty('stroke', colorNow);
-            counter = !counter;
-            if(isReset == false) {
-              sound.pause();
-              document.getElementsByClassName('backgroundCircle')[0].style.setProperty('stroke', '#9ca5b5');
-              time.style.color = '#fe4e4d';
-              return;}
-            setTimeout(blink, 550);
-          }, 0);
-          isReset = true;
-          
-          timer();
-        }
-      }
-    }, 0);
-  }
-  </code>
+
+      <figure>
+        <pre>
+          <code>
+            function timerStarter(){
+              minutes = +currentTime[0];
+              seconds = +currentTime[1];
+             setTimeout(function tick(){
+                if(isStarted && minutes+seconds != 0 && !isReset) {
+                  if(firstStart) {
+                    seconds++;
+                    firstStart = false;
+                  }
+                  circleProgress();
+                  countdown();
+                  setTimeout(tick, 1000);
+                  if(minutes+seconds == 0){
+                    isReset = true;
+                    let counter = false;
+                    let colorNow;
+                    let bgRing = document.getElementsByClassName('backgroundCircle')[0];
+                    let time = document.getElementById('clockLength');
+                    setTimeout(function blink(){
+                      sound.play();
+                      colorNow = counter & 1 ? '#fe4e4d' : '#0dc97f';
+                      time.style.color = colorNow;
+                      bgRing.style.setProperty('stroke', colorNow);
+                      counter = !counter;
+                      if(isReset == false) {
+                        sound.pause();
+                        document.getElementsByClassName('backgroundCircle')[0].style.setProperty('stroke', '#9ca5b5');
+                        time.style.color = '#fe4e4d';
+                        return;}
+                      setTimeout(blink, 550);
+                    }, 0);
+                    isReset = true;
+                    timer();
+                  }
+                }
+              }, 0);
+            }
+          </code>
+        </pre>
+      </figure>
     </div>
 
     <footer></footer>
   </div>
-  
+
 </body>
+
 </html>

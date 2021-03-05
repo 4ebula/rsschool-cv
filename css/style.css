@@ -1,0 +1,172 @@
+/* Order */
+ * /* Positioning */
+ * /* Box model */
+ * /* Typographic */
+ * /* Visual */
+ * /* Misc */
+/* Variables */
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+div,
+figure,
+main,
+header,
+footer,
+h1,
+h2{
+  box-sizing: border-box;
+}
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 70%;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #ececec;
+}
+
+header {
+  position: relative;
+  display: grid;
+  grid-template: "name image" 1fr "contacts image" 2fr/1fr 1fr;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-height: 300px;
+  border-bottom: 0.5px solid #e9e9e9;
+}
+@media (max-width: 600px){
+  header{
+    grid-template: "name" "contacts" "image";
+    max-height: fit-content;
+  }
+}
+.contacts {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contacts;
+  display: flex;
+  flex-direction: column;
+}
+.contacts ul {
+  flex-direction: column;
+}
+.contacts ul li {
+  padding: 0;
+}
+
+figure {
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: image;
+  max-width: 100%;
+  max-height: 300px;
+  
+}
+figure img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+}
+main div {
+  border-bottom: 0.5px solid #e9e9e9;
+}
+main ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  height: 102px;
+}
+main ul li {
+  flex: 1 1 34px;
+  box-sizing: border-box;
+  padding: 2px 5px;
+  list-style: square;
+}
+@media (min-width: 320px) and (max-width: 768px){
+  main ul{
+    height: auto;
+  }
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+a:hover {
+  color: #cfc8ea;
+  text-decoration: underline;
+}
+
+.github-logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  min-height: 32px;
+}
+.github-logo a{
+  position: relative;
+  font-size: 1.1em;
+  margin-left: 25px;
+}
+.github-logo a:hover{
+  color: #000;
+}
+.github-logo a::before{
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  background-image: url("images/GitHub-Mark-32px.png");
+  background-size: cover;
+}
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 70px;
+  margin-top: 20px;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  margin: 0 auto;
+  top: -10px;
+  left: 5%;
+  width: 90%;
+  border-top: 1px solid #585858;
+}
+footer div {
+  flex: 1 1 auto;
+}
+footer img {
+  max-height: 100%;
+}

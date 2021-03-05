@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>CV</title>
 </head>
 
 <body>
   <div class="container">
-    <main>
+    <header>
       <h1>Gleb Pissarik</h1>
       <div class="contacts">
         <h2>Contacts</h2>
@@ -19,89 +19,52 @@
           <li>E-mail: <a href="mailto:4ebula@gmail.com">4ebula@gmail.com</a></li>
           <li>Phone: +375 29 230 86 80</li>
           <li>Telegram: <a href="https://t.me/Chebula" target="_blank">@Chebula</a></li>
-          <li>Github: <a href="https://github.com/4ebula" target="_blank">4ebula</a></li>
         </ul>
       </div>
-      <div><img src="" alt="avatar"></div>
+      <figure><img src="images/avatar.jpg" alt="avatar"></figure>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <h2>About me</h2>
+          <p>My goal is to change career and become a front end developer. Have a passion for codding.
+            I'm very attracted to the opportunity to learn creating mobile apps and SPA.
+            Great learner; like to discover new approaches and ways, always strive to improve myself. Can easily find
+            elegant and efficient solutions to non-standart tasks.
+            Background in supporting site with CMS (Joomla).
+          </p>
+        </div>
+        <div>
+          <h2>Skills</h2>
+          <ul>
+            <li>Average level in HTML &amp; CSS</li>
+            <li>Bootstrap, jQuery</li>
+            <li>Basic level in JS and C++</li>
+            <li>Git version control</li>
+            <li>CMS (Joomla, Wordpress)</li>
+            <li>English level is somewhere about B1</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Code examples</h2>
+          <div class="github-logo"><a href="https://github.com/4ebula">Github</a></div>
+        </div>
+        <div>
+          <h2>Education </h2>
+          <p>Self-educated.</p>
+        </div>
+      </section>
     </main>
 
-    <section>
-      <div>
-        <h2>About me</h2>
-        <p>My goal is to change career and become a front end developer. Have a passion for codding.
-          I'm very attracted to the opportunity to learn creating mobile apps and SPA.
-          Great learner; like to discover new approaches and ways, always strive to improve myself. Can easily find
-          elegant and efficient solutions to non-standart tasks.
-          Background in supporting site with CMS (Joomla).
-        </p>
-      </div>
-      <div>
-        <h2>Skills</h2>
-        <ul>
-          <li>Average level in HTML &amp; CSS</li>
-          <li>Bootstrap, jQuery</li>
-          <li>Basic level in JS and C++</li>
-          <li>Git version control</li>
-          <li>CMS (Joomla, Wordpress)</li>
-          <li>English level is somewhere about B1</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Education </h2>
-        <p>Self-educated.</p>
-      </div>
-      <div>
-        <h2>Code example</h2>
-
-        <figure>
-          <pre>
-            <code>
-function timerStarter(){
-  minutes = +currentTime[0];
-  seconds = +currentTime[1];
- setTimeout(function tick(){
-    if(isStarted && minutes+seconds != 0 && !isReset) {
-      if(firstStart) {
-        seconds++;
-        firstStart = false;
-      }
-      circleProgress();
-      countdown();
-      setTimeout(tick, 1000);
-      if(minutes+seconds == 0){
-        isReset = true;
-        let counter = false;
-        let colorNow;
-        let bgRing = document.getElementsByClassName('backgroundCircle')[0];
-        let time = document.getElementById('clockLength');
-        setTimeout(function blink(){
-          sound.play();
-          colorNow = counter & 1 ? '#fe4e4d' : '#0dc97f';
-          time.style.color = colorNow;
-          bgRing.style.setProperty('stroke', colorNow);
-          counter = !counter;
-          if(isReset == false) {
-            sound.pause();
-            document.getElementsByClassName('backgroundCircle')[0].style.setProperty('stroke', '#9ca5b5');
-            time.style.color = '#fe4e4d';
-            return;}
-          setTimeout(blink, 550);
-        }, 0);
-        isReset = true;
-        timer();
-      }
-    }
-  }, 0);
-}
-            </code>
-          </pre>
-        </figure>
-      </div>
-    </section>
-
     <footer>
-      <div></div>
-      <div></div>
+      <div>
+        <a href="https://github.com/4ebula" target="_blank">Github</a>
+        <p>2021</p>
+      </div>
+      <div>
+        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rsschool-logo"></a>
+      </div>
     </footer>
   </div>
 

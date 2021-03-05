@@ -1,1 +1,1 @@
-https://4ebula.github.io/rsschool-cv/cv
+https://4ebula.github.io/rsschool-cv/
